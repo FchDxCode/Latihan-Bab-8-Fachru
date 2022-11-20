@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Soal Bab 8 No 4</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var date = new Date();
+      var hari =
+        date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear();
+      var deadline = new Date();
+      deadline.setDate(date.getDate() + 90);
+      var deadline1 =
+        deadline.getDate() +
+        "/" +
+        deadline.getMonth() +
+        "/" +
+        deadline.getFullYear();
+      alert("Hari Ini Tanggal:");
+      document.write("Hari Ini: ", hari, "<br />");
+      document.write("<br />");
+      alert("Deadline Pada Tanggal:");
+      document.write("Deadline nya: ", deadline1);
+    </script>
+  </body>
+</html>

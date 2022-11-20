@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Bab 8 No 7</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var bunga = [
+        "Bunga Bangkai",
+        "Bunga Anggrek",
+        "Bunga Melati",
+        "Bunga Kembang Sepatu",
+        "Bunga Bougenvile",
+        "Bunga Alamanda",
+        "Bunga Asoka",
+        "Bunga Sakura",
+        "Bunga Lily",
+        "Bunga Kamboja",
+      ];
+      var randomBunga = () => {
+        var tampil = Math.random() * bunga.length;
+        return bunga[Math.round(tampil)];
+      };
+      document.write(randomBunga());
+    </script>
+  </body>
+</html>
