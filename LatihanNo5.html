@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latihan Bab 8 No 5</title>
-  </head>
-  <body>
-    <script type="text/javascript">
-      var tanggal = new Date();
-      var ultah = 30 - tanggal.getDate();
-      document.write("Ulang Tahun Anda: ", ultah, " hari lagi");
-    </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Bab 8 No 5</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var ultah, hariS, hariUltah, hitungUltah, hariH;
+    ultah = [30, 12];
+    hariS = new Date();
+    hariUltah = new Date(hariS.getFullYear(), ultah[1] - 1, ultah[0]);
+    if (hariS.getTime() > hariUltah.getTime()) {
+      hariUltah.setFullYear(hariUltah.getFullYear() + 1);
+    }
+    hitungUltah = hariUltah.getTime() - hariS.getTime();
+    hariH = Math.floor(hitungUltah / (1000 * 60 * 60 * 24));
+    alert("Ulang Tahunmu " + hariH + " Hari Lagi");
+  </script>
+</body>
+
 </html>
